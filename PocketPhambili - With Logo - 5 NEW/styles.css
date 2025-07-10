@@ -1,0 +1,238 @@
+/* Add to the top of your styles.css */
+body.login-page {
+  background-image: url('BACKGROUND LOGIN.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode adjustments */
+.dark-mode .login-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.dark-mode .login-container .text-muted {
+  color: #ccc !important;
+}
+
+/* Add these new styles at the top */
+.navbar {
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.dark-mode .navbar {
+  background-color: #1a1a1a !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Removed duplicate .logo-img height: 40px; */
+
+/* Logo Styles */
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+/* New Orange Heading Style */
+.logo-heading {
+  color: #f38527 !important; /* The exact orange color requested */
+}
+
+.dark-mode .logo-heading {
+  color: #f8a65a !important; /* Lighter orange for dark mode */
+}
+
+/* Dark Mode Styles */
+/* Removed duplicate/incorrect background for dark mode */
+
+.dark-mode .compact-card {
+  background-color: white;
+  border-color: #dee2e6;
+}
+
+.dark-mode .card-header {
+  background-color: #f8f9fa !important;
+}
+
+body {
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+  border-color: #333;
+}
+
+.dark-mode .list-group-item {
+  background-color: #2d2d2d;
+  color: #f8f9fa;
+  border-color: #333;
+}
+
+.dark-mode .text-muted {
+  color: #aaa !important;
+}
+
+.dark-mode input.form-control {
+  background-color: #2d2d2d;
+  color: #f8f9fa;
+  border-color: #444;
+}
+
+.dark-mode #recommendations {
+  background-color: #1a3a4a;
+}
+
+.dark-mode .bg-light {
+  background-color: #2d2d2d !important;
+}
+
+.dark-mode .btn-outline-secondary {
+  color: #f8f9fa;
+  border-color: #666;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+  background-color: #333;
+}
+
+/* Existing styles */
+.card h5 {
+  margin-bottom: 0.5rem;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+#recommendations {
+  background-color: #e7f5ff;
+  transition: all 0.3s ease;
+}
+
+#advice {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-info {
+  background-color: #e7f5ff;
+  border-color: #a5d8ff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 40px;
+  }
+  
+  .d-flex.justify-content-between {
+    flex-direction: column;
+  }
+  
+  #darkModeToggle {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+  
+  .card {
+    padding: 1rem;
+  }
+  
+  .row.text-center > div {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Goals Container Styles */
+#goals-container .card {
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+#goals-container .card-body {
+  padding: 0.75rem;
+}
+
+#goals-container .card:hover {
+  transform: translateY(-2px);
+}
+
+.progress-bar {
+  transition: width 0.5s ease;
+}
+
+.goal-complete {
+  border-left: 4px solid #28a745;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0 10px;
+  }
+  
+  .compact-card {
+    border-radius: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+/* Add to styles.css */
+#import-section {
+  margin-bottom: 2rem;
+  border: 2px dashed #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#import-section:hover {
+  border-color: #f38527;
+}
+
+.dark-mode #import-section {
+  border-color: #444;
+}
+
+.dark-mode #import-section:hover {
+  border-color: #f8a65a;
+}
+
+.template-link {
+  color: #f38527;
+  text-decoration: none;
+}
+
+.template-link:hover {
+  text-decoration: underline;
+}
+
+.dark-mode .template-link {
+  color: #f8a65a;
+}
+
