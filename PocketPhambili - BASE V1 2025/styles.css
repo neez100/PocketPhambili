@@ -1,0 +1,291 @@
+/* Toast Notification Styles - Guaranteed Visibility */
+.toast {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.toast-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+.toast-body {
+    color: #212529;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Dark Mode Toast - High Contrast */
+body.dark-mode .toast {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+body.dark-mode .toast-header {
+    background-color: #333;
+    color: #ffffff;
+    border-bottom-color: #444;
+}
+
+body.dark-mode .toast-body {
+    color: #ffffff;
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1);
+}
+
+/* Ensure toast appears above all content */
+.toast-container {
+    z-index: 1100;
+}
+
+/* Specific toast types */
+.toast-success .toast-header {
+    background-color: #198754;
+    color: white;
+}
+
+.toast-error .toast-header {
+    background-color: #dc3545;
+    color: white;
+}
+
+.toast-warning .toast-header {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.toast-info .toast-header {
+    background-color: #0dcaf0;
+    color: #212529;
+}
+
+/* Rest of your existing CSS remains unchanged */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.logo-heading {
+    color: #f38527 !important;
+    font-weight: 700;
+}
+
+.logo-subtitle {
+    font-size: 0.85rem;
+    margin-top: -0.25rem;
+}
+
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
+
+/* Subtitle under Budget Manager in dark mode */
+body.dark-mode .logo-heading + p {
+    color: #bbb;
+}
+
+/* Placeholder text in dark mode */
+body.dark-mode input::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+/* Input styling in dark mode */
+body.dark-mode input {
+    color: #eee;
+    background-color: #222;
+    border-color: #444;
+}
+
+.card {
+    transition: all 0.25s ease;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    border-color: #333;
+}
+
+.dark-mode .list-group-item {
+    background-color: #2d2d2d;
+    color: #f8f9fa;
+    border-color: #333;
+}
+
+.dark-mode input.form-control {
+    background-color: #2d2d2d;
+    color: #f8f9fa;
+    border-color: #444;
+}
+
+.dark-mode #recommendations {
+    background-color: #1a3a4a;
+}
+
+.dark-mode .bg-light {
+    background-color: #2d2d2d !important;
+}
+
+.dark-mode .btn-outline-secondary {
+    color: #f8f9fa;
+    border-color: #666;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #333;
+}
+
+.dark-mode .compact-card {
+    background-color: #151515;
+    border-color: #2a2a2a;
+}
+
+.dark-mode .card-header {
+    background-color: #262626 !important;
+}
+
+/* Compact card */
+.compact-card {
+    padding: 0;
+}
+
+/* Recommendation styling */
+#recommendations {
+    background-color: #e7f5ff;
+    transition: all 0.3s ease;
+}
+
+#advice {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* List items layout */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Goals container */
+#goals-container .card {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+#goals-container .card-body {
+    padding: 0.75rem;
+}
+
+#goals-container .card:hover {
+    transform: translateY(-2px);
+}
+
+.progress-bar {
+    transition: width 0.5s ease;
+}
+
+.goal-complete {
+    border-left: 4px solid #28a745;
+}
+
+/* Import section */
+#import-section {
+    margin-bottom: 2rem;
+    border: 2px dashed #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#import-section:hover {
+    border-color: #f38527;
+}
+
+.dark-mode #import-section {
+    border-color: #444;
+}
+
+.dark-mode #import-section:hover {
+    border-color: #f8a65a;
+}
+
+.template-link {
+    color: #f38527;
+    text-decoration: none;
+}
+
+.template-link:hover {
+    text-decoration: underline;
+}
+
+.dark-mode .template-link {
+    color: #f8a65a;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 40px;
+    }
+    .d-flex.justify-content-between {
+        flex-direction: column;
+    }
+    #darkModeToggle {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+    .card {
+        padding: 1rem;
+    }
+    .row.text-center>div {
+        margin-bottom: 1rem;
+    }
+    .main-container {
+        padding: 0 10px;
+    }
+    .compact-card {
+        border-radius: 0;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+/* ===== SUBTITLE STYLING ===== */
+/* Light mode (default) - inherited from Bootstrap's .text-muted */
+.logo-subtitle {
+  font-size: 0.85rem; /* Ensures small size */
+  margin-top: -0.25rem; /* Tightens spacing with the heading */
+}
+
+/* Dark mode override */
+body.dark-mode .logo-subtitle {
+  color: #a0a0a0 !important; /* Light gray visible on dark bg */
+  opacity: 0.9;
+}
